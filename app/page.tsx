@@ -1,34 +1,20 @@
-
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <body>
-
-
-      <div className="w-screen h-12 rounded-sm flex justify-between">
-
-        <div className="text-white ml-3 mt-3" >
-          <Image src="/images/placeholder_logo.svg" alt="" width={90} height={90}/>
+    <div className="bg-black min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+          <div className="text-center">
+            <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+              Find Your Perfect Study Partner
+            </h1>
+            <p className="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+              Connect with motivated students worldwide, boost your productivity, and achieve your academic goals together. Real-time collaboration meets AI-powered learning.
+            </p>
+          </div>
         </div>
-
-        <div className="text-white flex justify-between gap-3 mt-3 mr-5 align-middle items-center">
-
-          <div className="text-white">Features</div>
-          <div className="text-white">About Us</div>
-
-          <Button className=" text-white rounded-md border-2 p-1">Sign up/Login</Button>
-        </div>
-
       </div>
-
-
-      <p className="text-lg text-white">
-        Find Your Perfect Study Partner
-      </p>
-
-    </body>
-  )
+    </div>
+  );
 }
