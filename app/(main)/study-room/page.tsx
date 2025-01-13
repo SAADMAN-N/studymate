@@ -5,6 +5,7 @@ import TodoList from '../../../components/study/TodoList'
 import PomodoroTimer from '../../../components/study/PomodoroTimer'
 import AITutor from '../../../components/study/AITutor'
 import Notes from '../../../components/study/Notes'
+import SpotifyPlayer from '../../../components/study/SpotifyPlayer'
 import { useState } from 'react'
 
 const StudyRoom = () => {
@@ -35,9 +36,16 @@ const StudyRoom = () => {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-8">Study Room</h1>
       
-      {/* Video Section */}
-      <div className="mb-8 bg-gray-800 rounded-lg aspect-video flex items-center justify-center">
-        <p className="text-gray-400">Video window will appear here</p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        {/* Left Column - Spotify */}
+        <div>
+          <SpotifyPlayer />
+        </div>
+        
+        {/* Center and Right Columns - Video */}
+        <div className="md:col-span-2 bg-gray-800 rounded-lg aspect-video flex items-center justify-center">
+          <p className="text-gray-400">Video window will appear here</p>
+        </div>
       </div>
 
       {/* Study Partner Matching */}
