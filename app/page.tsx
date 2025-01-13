@@ -61,6 +61,16 @@ export default function Home() {
               <p className="text-gray-300">Stuck on a problem? Our AI tutor helps break down complex topics, answers questions, and keeps your study sessions productive.</p>
             </div>
           </div>
+          
+          {/* Call to Action */}
+          <div className="mt-12 text-center">
+            <a 
+              href="/study-room"
+              className="inline-block px-8 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+            >
+              Enter Study Room
+            </a>
+          </div>
         </div>
 
         {/* How It Works Section */}

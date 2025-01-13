@@ -6,6 +6,8 @@
 - File must be named `page.tsx` in its respective route directory
 - Must include 'use client' directive at the top of client components
 - All imports must be at the top of the file, before any code
+- When using client components with hooks, prefer arrow function component syntax with separate default export
+- All imports must be at the top of the file, before any code
 
 ## Authentication Flow
 - Using NextAuth.js with Google provider
