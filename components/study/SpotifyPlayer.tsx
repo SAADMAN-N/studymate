@@ -84,7 +84,7 @@ export default function SpotifyPlayer() {
 
       {isConnected ? (
         <iframe 
-          src="https://open.spotify.com/embed/view/your-library-playlists" 
+          src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8NTLI2TtZa6" 
           width="100%" 
           height="452" 
           allowFullScreen 

@@ -24,13 +24,18 @@
 - This warning suppression should be used sparingly and only when necessary
 
 ## Spotify Integration
-- Two integration options:
-  1. Embedded player (simpler): Use iframe with spotify.com/embed for basic playback
-  2. Full SDK integration: Use Web Playback SDK for complete control
-- Most reliable embed URLs:
-  - User's library: spotify.com/embed/view/your-library-playlists
-  - Specific playlist: spotify.com/embed/playlist/[PLAYLIST_ID]
-  - Featured playlists: spotify.com/embed/view/featured-playlists
+- Always handle missing images in playlists (use optional chaining)
+- Provide fallback UI for missing images
+- Use embedded player for simplest integration
+- Embed formats:
+  - Specific playlist: spotify.com/embed/playlist/[PLAYLIST_ID] (most reliable)
+  - Study playlist ID: 37i9dQZF1DX8NTLI2TtZa6 (Intense Studying)
+- No authentication or environment variables needed
+- Height should be at least 452px for full player controls
+- Allow attributes needed: autoplay, clipboard-write, encrypted-media, fullscreen, picture-in-picture
+- Use /browse/featured-playlists as default view
+- Direct API calls require OAuth token and proper scopes
+- Embed player works without direct API authentication
 - Avoid using /collection/ or /folder/ URLs as they may return 404
 - Embedded player benefits:
   - No need to handle playlist data
